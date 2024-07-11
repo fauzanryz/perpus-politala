@@ -1,0 +1,110 @@
+CRITICAL - 2024-07-06 14:38:29 --> ErrorException: Undefined variable $collection
+[Method: GET, Route: katalog]
+in APPPATH\Views\user\katalog.php on line 5.
+ 1 APPPATH\Views\user\katalog.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collection', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/katalog', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(13): view('user/katalog')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:39:44 --> ErrorException: Undefined variable $collection
+[Method: GET, Route: katalog]
+in APPPATH\Views\user\katalog.php on line 5.
+ 1 APPPATH\Views\user\katalog.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collection', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/katalog', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(13): view('user/katalog')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:40:05 --> ErrorException: Undefined variable $collections
+[Method: GET, Route: katalog]
+in APPPATH\Views\user\katalog.php on line 4.
+ 1 APPPATH\Views\user\katalog.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/katalog', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(13): view('user/katalog')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:42:07 --> ErrorException: Undefined variable $collection
+[Method: GET, Route: katalog]
+in APPPATH\Views\user\katalog.php on line 5.
+ 1 APPPATH\Views\user\katalog.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collection', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/katalog', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(16): view('user/katalog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:42:44 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog]
+in APPPATH\Views\user\katalog.php on line 5.
+ 1 APPPATH\Views\user\katalog.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/katalog', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(16): view('user/katalog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:43:25 --> ErrorException: Undefined variable $collection
+[Method: GET, Route: katalog]
+in APPPATH\Views\user\katalog.php on line 5.
+ 1 APPPATH\Views\user\katalog.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collection', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\user\\katalog.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/katalog', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(16): view('user/katalog', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show('$1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:47:09 --> ArgumentCountError: Too few arguments to function App\Controllers\KatalogController::show(), 0 passed in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: katalog]
+in APPPATH\Controllers\KatalogController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-06 14:47:09 --> ArgumentCountError: Too few arguments to function App\Controllers\KatalogController::show(), 0 passed in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: katalog]
+in APPPATH\Controllers\KatalogController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')

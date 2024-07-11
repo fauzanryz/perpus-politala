@@ -1,0 +1,1757 @@
+ERROR - 2024-07-09 03:45:58 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE perpus-politala.pencarianSederhanaOpacLimit1; expected 8, got 0 in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianS...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianS...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianS...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(28): CodeIgniter\Database\BaseConnection->query('CALL pencarianS...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('')
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-09 03:45:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE perpus-politala.pencarianSederhanaOpacLimit1; expected 8, got 0
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KatalogModel.php(28): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1()')
+ 2 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:45:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE perpus-politala.pencarianSederhanaOpacLimit1; expected 8, got 0
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1()')
+ 3 APPPATH\Models\KatalogModel.php(28): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1()')
+ 4 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:45:58 --> [Caused by] mysqli_sql_exception: Incorrect number of arguments for PROCEDURE perpus-politala.pencarianSederhanaOpacLimit1; expected 8, got 0
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianSederhanaOpacLimit1()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1()')
+ 4 APPPATH\Models\KatalogModel.php(28): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1()')
+ 5 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 03:46:46 --> mysqli_sql_exception: Unknown column 'a' in 'field list' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianS...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianS...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianS...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianS...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-09 03:46:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a' in 'field list'
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 2 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:46:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'a' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 3 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 4 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:46:46 --> [Caused by] mysqli_sql_exception: Unknown column 'a' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianSederhanaOpacLimit1(a, a)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 4 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(a, a)')
+ 5 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 03:47:43 --> mysqli_sql_exception: Unknown column 'fAuthor' in 'field list' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianS...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianS...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianS...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianS...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-09 03:47:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'fAuthor' in 'field list'
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 2 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:47:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'fAuthor' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 3 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 4 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:47:43 --> [Caused by] mysqli_sql_exception: Unknown column 'fAuthor' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianSederhanaOpacLimit1(fAuthor, a)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 4 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(fAuthor, a)')
+ 5 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 03:57:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?, ?, ?)' at line 1 in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianS...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianS...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianS...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(33): CodeIgniter\Database\BaseConnection->query('CALL pencarianS...', Array)
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a', 'a', 'a', 'a', 'a', 'a')
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-09 03:57:52 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?, ?, ?)' at line 1
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KatalogModel.php(33): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 2 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a', 'a', 'a', 'a', 'a', 'a')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:57:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)')
+ 3 APPPATH\Models\KatalogModel.php(33): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 4 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a', 'a', 'a', 'a', 'a', 'a')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 03:57:52 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '?, ?, ?, ?, ?, ?, ?, ?, ?)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)')
+ 4 APPPATH\Models\KatalogModel.php(33): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(?, ?, ?, ?, ?, ?, ?, ?, ?)', [...])
+ 5 APPPATH\Controllers\KatalogController.php(17): App\Models\KatalogModel->cariSederhanaOpac('a', 'a', 'a', 'a', 'a', 'a', 'a')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 04:09:15 --> mysqli_sql_exception: Table 'perpus-politala.tempcariopac' doesn't exist in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianS...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianS...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianS...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianS...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(26): App\Models\KatalogModel->cariSederhanaOpac(NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-09 04:09:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'perpus-politala.tempcariopac' doesn't exist
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 2 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->cariSederhanaOpac(null, null, null, null, null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:09:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'perpus-politala.tempcariopac' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 3 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 4 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->cariSederhanaOpac(null, null, null, null, null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:09:15 --> [Caused by] mysqli_sql_exception: Table 'perpus-politala.tempcariopac' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 4 APPPATH\Models\KatalogModel.php(30): CodeIgniter\Database\BaseConnection->query('CALL pencarianSederhanaOpacLimit1(\'0\', \'\', \'\', \'\', \'\', \'\', \'\', \'\')')
+ 5 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->cariSederhanaOpac(null, null, null, null, null, null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 04:14:01 --> mysqli_sql_exception: Unknown column 'title' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(18): App\Models\KatalogModel->cariSederhanaOpac('title')
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-07-09 04:14:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'title' in 'where clause'
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+WHERE `title` LIKE :title: ESCAPE \'!\'', [...], false)
+ 2 APPPATH\Models\KatalogModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\KatalogController.php(18): App\Models\KatalogModel->cariSederhanaOpac('title')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:14:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+WHERE `title` LIKE \'%title%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+WHERE `title` LIKE \'%title%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+WHERE `title` LIKE :title: ESCAPE \'!\'', [...], false)
+ 4 APPPATH\Models\KatalogModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\KatalogController.php(18): App\Models\KatalogModel->cariSederhanaOpac('title')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:14:01 --> [Caused by] mysqli_sql_exception: Unknown column 'title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `collections`
+WHERE `title` LIKE \'%title%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+WHERE `title` LIKE \'%title%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+WHERE `title` LIKE \'%title%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+WHERE `title` LIKE :title: ESCAPE \'!\'', [...], false)
+ 5 APPPATH\Models\KatalogModel.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\KatalogController.php(18): App\Models\KatalogModel->cariSederhanaOpac('title')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 04:28:52 --> mysqli_sql_exception: Unknown column 'catID' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT\tC.Worksh...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT\tC.Worksh...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\tC.Worksh...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Model.php(915): CodeIgniter\Database\BaseConnection->query('SELECT\tC.Worksh...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(17): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-09 04:28:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'catID' in 'where clause'
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Model.php(915): CodeIgniter\Database\BaseConnection->query('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 2 APPPATH\Controllers\KatalogController.php(17): CodeIgniter\Model->__call('query', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:28:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'catID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 3 SYSTEMPATH\Model.php(915): CodeIgniter\Database\BaseConnection->query('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 4 APPPATH\Controllers\KatalogController.php(17): CodeIgniter\Model->__call('query', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:28:52 --> [Caused by] mysqli_sql_exception: Unknown column 'catID' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 4 SYSTEMPATH\Model.php(915): CodeIgniter\Database\BaseConnection->query('SELECT	C.Worksheet_id,
+(SELECT C.CoverURL FROM catalogs C WHERE C.ID = catID) AS CoverURL , 
+(SELECT W.name FROM worksheets W WHERE W.ID = C.worksheet_id) AS JENIS_BAHAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (245,246,440,740) GROUP BY CR.CatalogId) AS JUDUL,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (240) GROUP BY CR.CatalogId) AS JUDUL_SERAGAM,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (100,110,111,700,710,711,800,810,811) GROUP BY CR.CatalogId) AS PENGARANG,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (250) GROUP BY CR.CatalogId) AS EDISI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (490) GROUP BY CR.CatalogId) AS PERNYATAAN_SERI,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (260,264) GROUP BY CR.CatalogId) AS PENERBITAN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (300) GROUP BY CR.CatalogId) AS DESKRIPSI_FISIK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (336) GROUP BY CR.CatalogId) AS KONTEN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (337) GROUP BY CR.CatalogId) AS MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (338) GROUP BY CR.CatalogId) AS PENYIMPANAN_MEDIA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (538) GROUP BY CR.CatalogId) AS INFORMASI_TEKNIS,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (020) GROUP BY CR.CatalogId) AS ISBN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (022) GROUP BY CR.CatalogId) AS ISSN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (024) AND CR.indicator1 = 2 GROUP BY CR.CatalogId) AS ISMN,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \'|\') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (600,610,611,650,651) GROUP BY CR.CatalogId) AS SUBJEK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (520) GROUP BY CR.CatalogId) AS ABSTRAK,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (500,501,502,504,505,533,550) GROUP BY CR.CatalogId) AS CATATAN,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,36,3) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 5) AS BAHASA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,34,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 17) AS BENTUK_KARYA,
+(SELECT RI.Name FROM catalog_ruas CR LEFT JOIN refferenceitems RI ON TRIM(RI.Code) = SUBSTRING(CR.VALUE,23,1) WHERE CR.CatalogId = C.ID AND CR.Tag = 008 AND RI.Refference_id = 2) AS TARGET_PEMBACA,
+(SELECT GROUP_CONCAT(CS.Value ORDER BY CR.Tag,CS.Sequence ASC SEPARATOR \' \') FROM catalog_subruas CS LEFT JOIN catalog_ruas CR ON CS.RuasID = CR.ID WHERE CR.CatalogId = C.ID AND CR.Tag IN (856) GROUP BY CR.CatalogId) AS LOKASI_AKSES_ONLINE
+FROM catalogs C WHERE C.ID = catID AND isopac = 1;')
+ 5 APPPATH\Controllers\KatalogController.php(17): CodeIgniter\Model->__call('query', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 04:33:12 --> ErrorException: Undefined array key "collections_t"
+[Method: GET, Route: katalog]
+in APPPATH\Controllers\KatalogController.php on line 19.
+ 1 APPPATH\Controllers\KatalogController.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "collections_t"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Controllers\\KatalogController.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 05:59:05 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, array given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', [])
+ 2 APPPATH\Controllers\KatalogController.php(18): App\Models\KatalogModel->cariAuthor([])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:03:04 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:03:05 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:03:05 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:03:06 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:04:31 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:04:32 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:04:32 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(21): App\Models\KatalogModel->cariAuthor(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:11 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:20 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:21 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:21 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:21 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:22 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:26 --> ErrorException: Undefined variable $collections_detail
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 37.
+ 1 APPPATH\Views\katalog\search.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_detail', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:15:39 --> ErrorException: Undefined array key "JUDUL"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "JUDUL"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:18:09 --> ErrorException: Undefined array key 0
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 38.
+ 1 APPPATH\Views\katalog\search.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 38)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:39:20 --> ErrorException: Undefined variable $collection
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collection', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:39:34 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(30): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:44:11 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(34): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:28 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:28 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:29 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:29 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:30 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:30 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:30 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:30 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:31 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:31 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:39 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:48:54 --> ArgumentCountError: Too few arguments to function App\Models\KatalogModel::cariAuthor(), 1 passed in C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php on line 26 and exactly 2 expected
+[Method: GET, Route: katalog/search]
+in APPPATH\Models\KatalogModel.php on line 28.
+ 1 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->cariAuthor('Daryanto')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:49:00 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:49:07 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:49:52 --> ErrorException: Undefined array key ""
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 06:52:12 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 41.
+ 1 APPPATH\Views\katalog\search.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:11:23 --> ErrorException: Undefined array key "author"
+[Method: GET, Route: katalog]
+in APPPATH\Views\katalog\index.php on line 23.
+ 1 APPPATH\Views\katalog\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "author"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/index', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(20): view('katalog/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:11:54 --> ErrorException: Undefined array key ""
+[Method: GET, Route: katalog]
+in APPPATH\Views\katalog\index.php on line 23.
+ 1 APPPATH\Views\katalog\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/index', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(20): view('katalog/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:12:07 --> ErrorException: Undefined array key ""
+[Method: GET, Route: katalog]
+in APPPATH\Views\katalog\index.php on line 23.
+ 1 APPPATH\Views\katalog\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/index', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(20): view('katalog/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:20:11 --> BadMethodCallException: Call to undefined method App\Models\KatalogModel::cariAuthor
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\KatalogController.php(26): CodeIgniter\Model->__call('cariAuthor', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:20:31 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:21:18 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:21:21 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php on line 31
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KatalogModel.php(31): CodeIgniter\Database\BaseBuilder->like('Author', null)
+ 2 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 07:21:28 --> mysqli_sql_exception: Unknown column 'Author' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-07-09 07:21:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Author' in 'where clause'
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+WHERE `Author` LIKE :Author: ESCAPE \'!\'
+OR  `Title` LIKE :Title: ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\KatalogModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:21:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'Author' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+WHERE `Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+WHERE `Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+WHERE `Author` LIKE :Author: ESCAPE \'!\'
+OR  `Title` LIKE :Title: ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25', [...], false)
+ 4 APPPATH\Models\KatalogModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:21:28 --> [Caused by] mysqli_sql_exception: Unknown column 'Author' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `collections`
+WHERE `Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+WHERE `Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+WHERE `Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+WHERE `Author` LIKE :Author: ESCAPE \'!\'
+OR  `Title` LIKE :Title: ESCAPE \'!\'
+ORDER BY `Title` ASC
+ LIMIT 25', [...], false)
+ 5 APPPATH\Models\KatalogModel.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 07:23:51 --> mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-07-09 07:23:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:23:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 4 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:23:51 --> [Caused by] mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 5 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 07:23:52 --> mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-07-09 07:23:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:23:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 4 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:23:52 --> [Caused by] mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 5 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 07:23:52 --> mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-07-09 07:23:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:23:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 4 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:23:52 --> [Caused by] mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 5 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-09 07:24:01 --> mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause' in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\perpus-politala\app\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\perpus-politala\app\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-07-09 07:24:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+[Method: GET, Route: katalog/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 2 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:24:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 4 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:24:01 --> [Caused by] mysqli_sql_exception: Unknown column 'collections.Title' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE \'%dar%\' ESCAPE \'!\'
+OR  `collections`.`Title` LIKE \'%dar%\' ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `collections`
+JOIN `catalogs` ON `collections`.`catalog_id` = `catalogs`.`id`
+WHERE `catalogs`.`Author` LIKE :catalogs.Author: ESCAPE \'!\'
+OR  `collections`.`Title` LIKE :collections.Title: ESCAPE \'!\'
+ORDER BY `collections`.`Title` ASC
+ LIMIT 25', [...], false)
+ 5 APPPATH\Models\KatalogModel.php(37): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\KatalogController.php(26): App\Models\KatalogModel->searchOpac('dar')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:27:18 --> ErrorException: Undefined array key "author"
+[Method: GET, Route: katalog/search]
+in APPPATH\Views\katalog\search.php on line 23.
+ 1 APPPATH\Views\katalog\search.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "author"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/search', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(29): view('katalog/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->search('')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-09 07:28:10 --> ErrorException: Undefined array key "key"
+[Method: GET, Route: katalog]
+in APPPATH\Views\katalog\index.php on line 23.
+ 1 APPPATH\Views\katalog\index.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "key"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php', 23)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/index', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(20): view('katalog/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')

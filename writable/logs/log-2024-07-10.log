@@ -1,0 +1,302 @@
+INFO - 2024-07-10 08:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-10 13:06:40 --> ErrorException: Undefined array key "collections_detail"
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Controllers\KatalogController.php on line 38.
+ 1 APPPATH\Controllers\KatalogController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "collections_detail"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Controllers\\KatalogController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:15:42 --> ErrorException: Undefined variable $collection
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Views\katalog\detail.php on line 57.
+ 1 APPPATH\Views\katalog\detail.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collection', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/detail', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(40): view('katalog/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:16:02 --> ErrorException: Undefined array key "nama_perpus"
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Views\katalog\detail.php on line 57.
+ 1 APPPATH\Views\katalog\detail.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_perpus"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/detail', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(40): view('katalog/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:16:10 --> ErrorException: Undefined array key "namaperpus"
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Views\katalog\detail.php on line 57.
+ 1 APPPATH\Views\katalog\detail.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaperpus"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/detail', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(40): view('katalog/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:16:53 --> ErrorException: Undefined array key "namaperpus"
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Views\katalog\detail.php on line 57.
+ 1 APPPATH\Views\katalog\detail.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaperpus"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/detail', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(40): view('katalog/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:17:05 --> ErrorException: Undefined array key "namaperpus"
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Views\katalog\detail.php on line 57.
+ 1 APPPATH\Views\katalog\detail.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaperpus"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/detail', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(40): view('katalog/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:17:39 --> ErrorException: Undefined array key "namaperpus"
+[Method: GET, Route: katalog/detail/497]
+in APPPATH\Views\katalog\detail.php on line 57.
+ 1 APPPATH\Views\katalog\detail.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaperpus"', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php', 57)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\katalog\\detail.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('katalog/detail', [], true)
+ 5 APPPATH\Controllers\KatalogController.php(40): view('katalog/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KatalogController->detail('497')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KatalogController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:33:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/koleksi.php"
+[Method: GET, Route: koleksi]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/koleksi.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/koleksi', [], true)
+ 3 APPPATH\Controllers\KoleksiController.php(12): view('user/koleksi')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:34:18 --> ErrorException: Undefined variable $collections_top
+[Method: GET, Route: koleksi]
+in APPPATH\Views\koleksi\index.php on line 40.
+ 1 APPPATH\Views\koleksi\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_top', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\koleksi\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\koleksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('koleksi/index', [], true)
+ 5 APPPATH\Controllers\KoleksiController.php(12): view('koleksi/index')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-10 13:48:04 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0 in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL showKonten...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL showKonten...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL showKonten...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKonten...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-10 13:48:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0
+[Method: GET, Route: koleksi]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKontenDigital()')
+ 2 APPPATH\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:48:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL showKontenDigital()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL showKontenDigital()')
+ 3 APPPATH\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKontenDigital()')
+ 4 APPPATH\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:48:04 --> [Caused by] mysqli_sql_exception: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL showKontenDigital()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL showKontenDigital()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL showKontenDigital()')
+ 4 APPPATH\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKontenDigital()')
+ 5 APPPATH\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+ERROR - 2024-07-10 13:48:32 --> mysqli_sql_exception: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0 in C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(308): mysqli->query('CALL showKonten...', 0)
+#1 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL showKonten...')
+#2 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL showKonten...')
+#3 C:\xampp\htdocs\perpus-politala\app\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKonten...')
+#4 C:\xampp\htdocs\perpus-politala\app\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+#5 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+#6 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+#7 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\perpus-politala\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\perpus-politala\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-07-10 13:48:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0
+[Method: GET, Route: koleksi]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKontenDigital()')
+ 2 APPPATH\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:48:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL showKontenDigital()')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL showKontenDigital()')
+ 3 APPPATH\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKontenDigital()')
+ 4 APPPATH\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:48:32 --> [Caused by] mysqli_sql_exception: Incorrect number of arguments for PROCEDURE perpus-politala.showKontenDigital; expected 1, got 0
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('CALL showKontenDigital()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('CALL showKontenDigital()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('CALL showKontenDigital()')
+ 4 APPPATH\Models\KoleksiModel.php(15): CodeIgniter\Database\BaseConnection->query('CALL showKontenDigital()')
+ 5 APPPATH\Controllers\KoleksiController.php(14): App\Models\KoleksiModel->getDigitalCollection()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:54:57 --> ErrorException: Undefined variable $collections_top
+[Method: GET, Route: koleksi]
+in APPPATH\Views\koleksi\index.php on line 40.
+ 1 APPPATH\Views\koleksi\index.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $collections_top', 'C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\koleksi\\index.php', 40)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\perpus-politala\\app\\Views\\koleksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('koleksi/index', [], true)
+ 5 APPPATH\Controllers\KoleksiController.php(21): view('koleksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->show()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 13:59:52 --> BadMethodCallException: Call to undefined method App\Models\KoleksiModel::searchOpac
+[Method: GET, Route: koleksi/search]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\KoleksiController.php(28): CodeIgniter\Model->__call('searchOpac', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->search('')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 14:08:51 --> TypeError: CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\perpus-politala\app\Models\KoleksiModel.php on line 27
+[Method: GET, Route: koleksi/search]
+in SYSTEMPATH\Database\BaseBuilder.php on line 987.
+ 1 APPPATH\Models\KoleksiModel.php(27): CodeIgniter\Database\BaseBuilder->like('Catalog_id', null)
+ 2 APPPATH\Controllers\KoleksiController.php(27): App\Models\KoleksiModel->searchDigitalCollection(null)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KoleksiController->search('')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KoleksiController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 14:19:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/artikel.php"
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/artikel.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/artikel', [], true)
+ 3 APPPATH\Controllers\ArtikelController.php(12): view('user/artikel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ArtikelController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ArtikelController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
+CRITICAL - 2024-07-10 14:32:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/statistik.php"
+[Method: GET, Route: statistik]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/statistik.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/statistik', [], true)
+ 3 APPPATH\Controllers\StatistikController.php(12): view('user/statistik')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\StatistikController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StatistikController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\perpus-politala\\public\\index.php')
