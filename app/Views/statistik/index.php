@@ -24,6 +24,7 @@
 </section><!-- /statistik Section -->
 
 <div class="container mt-2">
+ <h2 class="mb-3">Statistik</h2>
  <canvas id="pengunjungChart" width="800" height="400"></canvas>
 </div>
 

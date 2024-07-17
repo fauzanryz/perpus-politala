@@ -69,9 +69,11 @@
                         <li class="dropdown"><a href="<?= base_url('#services'); ?>"><span>Pustaka</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                             <ul>
                                 <li><a href="<?= base_url('katalog'); ?>">Katalog</a></li>
-                                <li><a href="<?= base_url('koleksi'); ?>">Koleksi</a></li>
+                                <li><a href="<?= base_url('koleksi'); ?>">Koleksi Digital</a></li>
                                 <li><a href="<?= base_url('artikel'); ?>">Artikel</a></li>
                                 <li><a href="<?= base_url('statistik'); ?>">Statistik</a></li>
+                                <li><a href="<?= base_url('e-book'); ?>">e-Book</a></li>
+                                <li><a href="<?= base_url('jurnal'); ?>">Jurnal Digital</a></li>
                             </ul>
                         </li>
                         <li><a href="<?= base_url('#contact'); ?>">Kontak</a></li>

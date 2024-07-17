@@ -25,6 +25,12 @@ $routes->get('artikel/search(:any)', 'ArtikelController::search/$1');
 // Statistik
 $routes->get('statistik', 'StatistikController::index');
 
+// e-Book
+$routes->get('e-book', 'EBookController::index');
+
+// Jurnal Digital
+$routes->get('jurnal', 'JurnalController::index');
+
 // Auth
 $routes->get('login', 'AuthController::login');
 $routes->post('saveRegister', 'AuthController::saveRegister');

@@ -987,7 +987,7 @@ img {
   /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
   border: none;
 }
-.card-title{
+.card-title {
   font-size: small;
 }
 .carousel-control-prev,
@@ -999,7 +999,6 @@ img {
   top: 50%;
   transform: translateY(-50%);
 }
-
 
 /* Koleksi */
 #koleksi {
@@ -1021,6 +1020,22 @@ img {
 
 /* Statistik */
 #statistik {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* e-Book */
+#ebook {
+  border-top: 1px solid #ccc;
+  padding-top: 30px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Jurnal */
+#jurnal {
   border-top: 1px solid #ccc;
   padding-top: 30px;
   padding-bottom: 0;
