@@ -7,7 +7,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class JurnalController extends BaseController
 {
-    public function index()
+    public function show()
     {
         return view('jurnal/index');
     }

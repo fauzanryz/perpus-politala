@@ -7,7 +7,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class StatistikController extends BaseController
 {
-    public function index()
+    public function show()
     {
         return view('statistik/index');
     }

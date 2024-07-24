@@ -7,7 +7,7 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class EBookController extends BaseController
 {
-    public function index()
+    public function show()
     {
         return view('e-book/index');
     }

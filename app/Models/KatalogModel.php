@@ -30,17 +30,17 @@ class KatalogModel extends Model
         $query = $this->db->query("CALL showCollectionOpac(" . $id . ")");
         return $query->getResultArray();
     }
-    
-        public function searchOpac($key)
-        {
-            $query = $this->db->table('catalogs')
-                ->like('Title', $key)
-                ->orLike('Author', $key)
-                ->orLike('Publikasi', $key)
-                ->orLike('Languages', $key)
-                ->limit(25)
-                ->orderBy('Title', 'ASC')
-                ->get();
-            return $query->getResultArray();
-        }
+
+    public function searchOpac($key)
+    {
+        $query = $this->db->table('catalogs')
+            ->like('Title', $key)
+            ->orLike('Author', $key)
+            ->orLike('Publikasi', $key)
+            ->orLike('Languages', $key)
+            ->limit(25)
+            ->orderBy('Title', 'ASC')
+            ->get();
+        return $query->getResultArray();
+    }
 }

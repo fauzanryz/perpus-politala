@@ -23,13 +23,13 @@ $routes->get('artikel/detail/(:num)', 'ArtikelController::detail/$1');
 $routes->get('artikel/search(:any)', 'ArtikelController::search/$1');
 
 // Statistik
-$routes->get('statistik', 'StatistikController::index');
+$routes->get('statistik', 'StatistikController::show');
 
 // e-Book
-$routes->get('e-book', 'EBookController::index');
+$routes->get('e-book', 'EBookController::show');
 
 // Jurnal Digital
-$routes->get('jurnal', 'JurnalController::index');
+$routes->get('jurnal', 'JurnalController::show');
 
 // Auth
 $routes->get('login', 'AuthController::login');
@@ -39,4 +39,4 @@ $routes->get('logout', 'AuthController::logout');
 
 // Admin
 $routes->get('dashboard-admin', 'Admin\AdminController::index');
-$routes->get('kelola-katalog', 'Admin\KatalogController::index');
+$routes->get('kelola-katalog', 'Admin\KelolaKatalogController::index');

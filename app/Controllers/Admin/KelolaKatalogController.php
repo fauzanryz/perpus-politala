@@ -5,7 +5,7 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class KatalogController extends BaseController
+class KelolaKatalogController extends BaseController
 {
     public function index()
     {
